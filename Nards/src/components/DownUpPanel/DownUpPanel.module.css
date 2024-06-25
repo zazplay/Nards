@@ -1,0 +1,238 @@
+.DownUpPanel {
+  width: 1500px;
+  background-color: #555555;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-between;
+  padding-right: 100px;
+  padding-left: 50px;
+  font-weight: 400;
+  position: relative;
+  transition: position 0.3s ease;
+  z-index: 1000;
+}
+
+.DownUpPanel.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.catalogBtn {
+  align-self: flex-start;
+  height: 36.9px;
+  background-color: rgb(199, 0, 0);
+  margin-left: 30px;
+  width: 300px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  padding-top: 13px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1001;
+}
+
+.downBtn {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 3px;
+}
+
+.otherBtns {
+  color: white;
+  align-self: center;
+  position: absolute;
+  margin-left: 340px;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  height: 50px;
+}
+
+.otherBtn {
+  padding-top: 12px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1001;
+}
+
+.otherBtn:hover {
+  background-color: #484848;
+}
+
+.hiddenDiv {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  z-index: 1001;
+}
+
+.visibleDiv {
+  height: 460px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+  position: absolute;
+  background-color: rgb(247, 247, 247);
+  margin-left: 30px;
+  width: 300px;
+  margin-top: 510px; 
+  display: table-row;
+  z-index: 1001;
+}
+
+.dopDivMenuEl {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+  height: 40px;
+  width: 280px;
+  border-bottom: 1px solid #d6d6d6;
+  text-align: left;
+  padding-left: 10px;
+  z-index: 1001;
+}
+
+.imgMenuCatalog {
+  height: 25px;
+  width: 25px;
+}
+
+@media (max-width: 1500px) {
+  .DownUpPanel {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 25px;
+  }
+
+  .catalogBtn {
+    align-self: flex-start;
+    height: 36.9px;
+    background-color: rgb(199, 0, 0);
+    margin-left: 30px;
+    width: 300px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    padding-top: 13px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .otherBtns {
+    color: white;
+    align-self: center;
+    position: absolute;
+    margin-left: 340px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .catalogBtn {
+    width: 200px;
+    font-size: 15px;
+  }
+
+  .otherBtns {
+    font-size: 14px;
+    margin-left: 220px;
+  }
+
+  .otherBtn {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .DownUpPanel {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .catalogBtn {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .otherBtns {
+    position: static;
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .visibleDiv {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 10px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .otherBtns {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .otherBtn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .visibleDiv {
+    height: auto;
+    width: 100%;
+    position: static;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .DownUpPanel {
+    padding: 5px;
+  }
+
+  .catalogBtn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .otherBtns {
+    font-size: 12px;
+    display: inline-flex;
+  }
+
+  .otherBtn {
+    padding: 5px 0;
+  }
+
+  .visibleDiv {
+    font-size: 14px;
+  }
+
+  .dopDivMenuEl {
+    font-size: 14px;
+    height: auto;
+    padding: 5px;
+  }
+}

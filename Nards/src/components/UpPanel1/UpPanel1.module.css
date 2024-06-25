@@ -1,0 +1,64 @@
+.UpPanel1 {
+    width: auto;
+    background-color: #F6F6F6;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.facebookImgWrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    user-select: none;
+}
+
+.facebookImg {
+    height: 18px;
+    width: 18px;
+    margin-top: 3px;
+    margin-left: 60px;
+    cursor: pointer; 
+    user-select: none;
+}
+
+.content {
+    margin-left: 10px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.ru {
+    margin-left: auto; 
+    margin-right: 10px;
+    cursor: pointer; 
+    user-select: none;
+}
+
+.otherBtns 
+{
+    font-size: 0.8em;
+    color: rgb(127, 127, 127);
+    margin-right: 7px;
+    cursor: pointer; 
+    user-select: none;
+}
+
+.otherBtns:hover 
+{
+    color: darkred;
+}
+
+.accico{
+    cursor: pointer; 
+    user-select: none;
+    height: 16px;
+    width: 16px;
+    margin-top: -3px;
+    margin-left: 5px;
+}
